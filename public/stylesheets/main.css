@@ -1,27 +1,87 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap");
 
+.jumbotron {
+  background: rgb(27, 23, 43);
+  color: white;
+  padding-bottom: 80px;
+}
+.jumbotron .btn-primary {
+  background: #845ac7;
+  border-color: #845ac7;
+}
+.jumbotron .btn-primary:hover {
+  background: #7646c1;
+}
+.jumbotron p {
+  color: #d9ccee;
+  max-width: 75%;
+  margin: 1em auto 2em;
+}
+.navbar + .jumbotron {
+  margin-top: -20px;
+  position: fixed;
+}
+
+.navbar {
+  background-color: #000000;
+}
+.jumbotron .lang-logo {
+  display: block;
+  background: #b01302;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 2px solid white;
+}
+.jumbotron .lang-logo img {
+  max-width: 100%;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  min-height: 55vh;
+  padding-top: 45vh;
+}
+
+.countdown-container {
+  position: relative;
+  bottom: 39vh;
+}
+
+#tag {
+  position: absolute;
+  right: 20px;
+  bottom: 42px;
+  color: #b9b9b9;
+  font-size: x-small;
+}
+
+#login-btn {
+  position: absolute !important;
+  top: 9px;
+  right: 42px;
+}
+
+#timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*   justify-content: space-around;
+ */
+  margin-bottom: -270px;
+}
+
+#timer > h1 {
+  margin: 0 19px;
+}
+
+.note {
+  color: black;
+  background-color: aliceblue;
+  border-radius: 3px;
+  padding: 12px;
+  font-family: "Sen", sans-serif;
+}
