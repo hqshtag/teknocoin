@@ -1,0 +1,42 @@
+{
+  "name": "tiknuke",
+  "version": "1.0.0",
+  "description": "A tiknuke countdown",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hqshtag/tiknuke"
+  },
+  "keywords": [
+    "meteor",
+    "strike",
+    "doomsday",
+    "doom",
+    "doomsday clock",
+    "countdown",
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "hqshtag",
+    "email": "wajih.tagourty@gmail.com"
+  }
+}
