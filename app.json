@@ -1,8 +1,18 @@
 {
-  "name": "Start on Heroku: Node.js",
-  "description": "A barebones Node.js app using Express 4",
+  "name": "TikNuke",
+  "description": "A countdown app to the apocalypse",
   "repository": "https://github.com/heroku/node-js-getting-started",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
-  "keywords": ["node", "express", "heroku"],
+  "keywords": [
+    "meteor",
+    "strike",
+    "doomsday",
+    "doom",
+    "doomsday clock",
+    "countdown",
+    "node",
+    "express",
+    "heroku"
+  ],
   "image": "heroku/nodejs"
 }
