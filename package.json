@@ -7,9 +7,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon index.js",
+    "start:dev": "title Node dev Server && nodemon index.js",
     "start": "node index.js",
-    "test": "node test.js"
+    "test": "title Testing... & node test.js"
   },
   "dependencies": {
     "cool-ascii-faces": "^1.3.4",
