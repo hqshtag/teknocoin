@@ -15,18 +15,23 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  __set("dy", days, "d");
-  __set("hr", hours, "h");
-  __set("mn", minutes, "m");
-  __set("sc", seconds, "s");
+  __set("dy", days, ":");
+  __set("hr", hours, ":");
+  __set("mn", minutes, ":");
+  __set("sc", seconds, "");
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("time").innerHTML = "EXPIRED";
   }
-}, 700);
+}, 1000);
 
 function __set(selector, value, text) {
+  //fixing
+  value = value < 10 ? "0" + value : value;
+  //seperator
   if (text) value += text;
+
+  //showing, notice the #, i'm using ids
   document.querySelector("#" + selector).innerHTML = value;
 }

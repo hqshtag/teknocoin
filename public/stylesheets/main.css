@@ -1,7 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap");
+@font-face {
+  font-family: "digital7";
+  src: url("./fonts/digital-7\ \(mono\).ttf");
+}
+
+:root {
+  --main-clock-font-color: #0066ff;
+  --main-clock-bg-color: #0e0c0c;
+  --glow-from-color: rgb(216, 25, 41);
+  --glow-to-color: rgb(29, 117, 199);
+  --glow-optional-color: rgb(255, 255, 255);
+}
 
 .jumbotron {
-  background: rgb(27, 23, 43);
+  background: hsl(252, 30%, 13%);
   color: white;
   padding-bottom: 80px;
 }
@@ -72,11 +84,46 @@
   /*   justify-content: space-around;
  */
   margin-bottom: -270px;
+  padding: 9px 27px;
 }
 
-#timer > h1 {
-  margin: 0 19px;
+#timer /* > .subcont */ > h1 {
+  margin: 0 0px;
+  font-size: 9rem;
+  font-family: "digital7", sans-serif;
+  color: var(--main-clock-font-color);
+  background-color: var(--main-clock-bg-color);
+  font-weight: 100;
+  -webkit-animation: glow 750ms ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 700ms cubic-bezier(1, 0.01, 0.55, 0.63) infinite alternate;
 }
+
+#timer > h1:last-of-type {
+  padding-right: 27px;
+}
+
+#timer > h1:first-of-type {
+  padding-left: 27px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 700px var(--glow-optional-color);
+    opacity: 0.6;
+  }
+  to {
+    text-shadow: 0 0 3px var(--glow-from-color), 0 0 19px var(--glow-from-color);
+  }
+}
+
+/* .digital-placeholder {
+  position: absolute;
+  color: #b8b8b8 !important;
+  opacity: 0.1618;
+  top: 162px;
+  z-index: 50;
+} */
 
 .note {
   color: black;
