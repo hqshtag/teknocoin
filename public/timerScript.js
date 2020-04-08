@@ -15,10 +15,10 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  __set("dy", days, ":");
-  __set("hr", hours, ":");
-  __set("mn", minutes, ":");
-  __set("sc", seconds, "");
+  __set("dy", days);
+  __set("hr", hours);
+  __set("mn", minutes);
+  __set("sc", seconds);
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
