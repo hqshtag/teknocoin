@@ -5,10 +5,10 @@
   "engines": {
     "node": "12.x"
   },
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start:dev": "title Node dev Server && nodemon index.js",
-    "start": "node index.js",
+    "start:dev": "title Node dev Server && nodemon app.js",
+    "start": "node app.js",
     "test": "title Testing... & node test.js"
   },
   "dependencies": {
