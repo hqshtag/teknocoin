@@ -1,0 +1,87 @@
+.cool-grid-container {
+  display: grid;
+  grid-template-columns: 1.8fr 0.9fr;
+  grid-template-rows: 0.2fr 1.8fr;
+  gap: 1px 1px;
+  grid-template-areas: "navbar navbar_side" "maincontainer sidemenu";
+}
+
+.c-navbar {
+  grid-area: navbar;
+}
+
+.c-navbar_side {
+  grid-area: navbar_side;
+}
+
+.c-sidemenu {
+  grid-area: sidemenu;
+}
+
+.c-maincontainer {
+  grid-area: maincontainer;
+}
+
+.basic-grid-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1.4fr;
+  grid-template-rows: 0.1fr 1.1fr;
+  gap: 1px 1px;
+  grid-template-areas: "navbar navbar" "leftcontent rightcontent";
+}
+
+.b-navbar {
+  grid-area: navbar;
+}
+
+.b-rightcontent {
+  grid-area: rightcontent;
+}
+
+.b-leftcontent {
+  grid-area: leftcontent;
+}
+
+.cardinal-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "NW N NE" "W C E" "SW S SE";
+}
+
+.N {
+  grid-area: N;
+}
+
+.S {
+  grid-area: S;
+}
+
+.E {
+  grid-area: E;
+}
+
+.W {
+  grid-area: W;
+}
+
+.NW {
+  grid-area: NW;
+}
+
+.NE {
+  grid-area: NE;
+}
+
+.SE {
+  grid-area: SE;
+}
+
+.SW {
+  grid-area: SW;
+}
+
+.C {
+  grid-area: C;
+}

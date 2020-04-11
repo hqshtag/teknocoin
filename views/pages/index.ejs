@@ -5,18 +5,70 @@
   </head>
 
   <body>
-    <div class="jumbotron main-container text-center">
-      <div class="grid-container">
-        <div class="left-side-container"></div>
-        <div class="right-side-container">
-          <% include ../partials/note2.ejs%> <% include ../partials/timer.ejs%>
-          <% include ../partials/note.ejs%> <% include
-          ../partials/colorsnote.ejs%>
-        </div>
-      </div>
+    <h1>h1 hello</h1>
+    <h2>h2 hello</h2>
+    <h3>h3 hello</h3>
+    <h4>h4 hello</h4>
+    <h5>h5 hello</h5>
+    <h6>h6 hello</h6>
+    <div class="paper light_bg">
+      <h1 class="paper_title">Sometimes we have a long title</h1>
+      <p class="paper_para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum except
+        perspiciatis tempora.
+        <em
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ea
+          fugit eos possimus,</em
+        >
+        similique, ipsum cumque
+        <a href="#">veros quaerat</a>, commodi quia voluptate nostrum a labore
+        magni aliquid similique explicabo laboriosam. e e corrupti corporis quis
+        pariatur! Quam fugiat doloribus sit.
+      </p>
     </div>
+    <a href="#">nasty link</a>
+    <hr />
+    <button>click me</button>
+    <hr />
+    <input id="c1" type="checkbox" />
+    <input type="radio" name="r1" id="r1" />
+    <input type="radio" name="r1" id="r2" />
+
+    <input type="checkbox" class="switch" name="c2" id="c1" />
+
+    <div class="text_group field">
+      <input
+        type="input"
+        class="text_field"
+        placeholder="Name"
+        name="name"
+        id="name"
+      />
+      <label for="name" class="text_label">Name</label>
+    </div>
+
+    <ul>
+      <li>1rst elem</li>
+      <li>2nd elem</li>
+      <li>3rd elem</li>
+      <li>4th elem</li>
+      <li>5th elem</li>
+    </ul>
+
+    <ol>
+      <li>elem</li>
+      <li>elem</li>
+      <li>elem</li>
+      <li>elem</li>
+      <li>elem</li>
+      <li>elem</li>
+      <li>elem</li>
+      <li>elem</li>
+      <li>elem</li>
+    </ol>
   </body>
   <script>
+    /*
     window.addEventListener("load", () => {
       let script = document.createElement("script");
       let clr = document.createElement("script");
@@ -24,6 +76,6 @@
       clr.src = "./colorScript.js";
       document.body.appendChild(script);
       document.body.appendChild(clr);
-    });
+    }); */
   </script>
 </html>

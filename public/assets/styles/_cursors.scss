@@ -1,0 +1,26 @@
+* {
+  cursor: url("../cursors/material-design-best-edition-by-/arrow.cur"), default;
+}
+button {
+  &:hover {
+    cursor: url("../cursors/material-design-best-edition-by-/up.cur"), pointer;
+  }
+}
+
+a {
+  &:hover {
+    cursor: url("../cursors/material-design-best-edition-by-/link.cur"), pointer;
+  }
+}
+
+p {
+  &:hover {
+    cursor: url("../cursors/material-design-best-edition-by-/text.cur"), pointer;
+  }
+}
+
+li {
+  &:hover {
+    cursor: url("../cursors/material-design-best-edition-by-/pen.cur"), pointer;
+  }
+}

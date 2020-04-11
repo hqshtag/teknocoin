@@ -1,0 +1,101 @@
+@import "./colors";
+@import "./fonts";
+@import "./cursors";
+
+$main_btn_color: $greyCs;
+
+h1,
+h2,
+h3 {
+  font-family: "Muli";
+  font-weight: 1000;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Muli";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.27em;
+}
+
+h3 {
+  font-size: 1.9em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 0.81em;
+}
+
+p {
+  font-size: 1.3em;
+  font-family: "Rubik";
+}
+
+ul,
+ol,
+label {
+  font-family: "Baloo Paaji";
+}
+
+ul {
+  list-style: circle;
+}
+
+ol {
+  list-style: upper-roman outside;
+}
+
+li {
+  font-size: 1.3em;
+  margin: 0 0.1em;
+  padding: 0.1em;
+  &:hover {
+    color: lighten($fadding_violet, 9);
+  }
+  &:active {
+    color: $light_violet;
+  }
+}
+
+a {
+  font-family: "Rubik Medium Italic";
+  font-size: 1.2em;
+  text-decoration: none;
+  color: $dark_blue;
+  font-weight: 369;
+  letter-spacing: 0.01618em;
+  &:hover {
+    color: $another_blue;
+  }
+  &:active {
+    color: $blue;
+  }
+}
+
+button {
+  font-family: "Baloo Paaji SemiBold";
+  font-size: 20px;
+  padding: 0 0.5em;
+  border: solid $scary_black 0.9px;
+  border-radius: 3px;
+  background-color: $main_btn_color;
+  &:hover {
+    background-color: lighten($main_btn_color, 9);
+  }
+}
