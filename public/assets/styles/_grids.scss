@@ -22,24 +22,24 @@
   grid-area: maincontainer;
 }
 
-.basic-grid-container {
+@mixin basic-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1.4fr;
+  grid-template-columns: 1.8fr 1.2fr;
   grid-template-rows: 0.1fr 1.1fr;
   gap: 1px 1px;
   grid-template-areas: "navbar navbar" "leftcontent rightcontent";
-}
+  nav {
+    grid-area: navbar;
+    //background-color: red;
+  }
 
-.b-navbar {
-  grid-area: navbar;
-}
+  .right-content {
+    grid-area: rightcontent;
+  }
 
-.b-rightcontent {
-  grid-area: rightcontent;
-}
-
-.b-leftcontent {
-  grid-area: leftcontent;
+  .left-content {
+    grid-area: leftcontent;
+  }
 }
 
 .cardinal-grid-container {

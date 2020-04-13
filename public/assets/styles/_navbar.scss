@@ -1,0 +1,80 @@
+//variables
+$background-color: $grey72;
+$hover-color: $black-not-black;
+$text-color: #fff;
+$span-color: #ffffff;
+
+$font: "Baloo Paaji";
+
+// tutorial start
+nav {
+  //position: fixed;
+
+  width: 100%;
+  margin: 3px auto 0 auto;
+  box-shadow: 0 4px 12px rgba(#262c2c, 0.1);
+  background-color: $background-color;
+  max-width: 800px;
+  border-radius: 0.2em;
+  ul {
+    font-size: 0;
+    list-style-type: none;
+
+    // initial li
+    li {
+      font-family: $font;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $text-color;
+
+      display: inline-block;
+      padding: 15px;
+      position: relative;
+
+      // secondary ul
+      ul {
+        display: none;
+      }
+
+      // initial li:hover
+      &:hover {
+        cursor: url("../cursors/material-design-best-edition-by-/link.cur"),
+          pointer;
+        background-color: $hover-color;
+        color: darken($text-color, 19);
+        // secondary ul visibility change
+        ul {
+          display: block;
+          margin-top: 15px;
+
+          width: 200px;
+          right: -1px;
+
+          position: absolute;
+
+          // secondary li
+          li {
+            display: block;
+            background-color: darken($background-color, 7%);
+            span {
+              float: right;
+              color: $background-color;
+              background-color: $span-color;
+              padding: 2px 5px;
+              text-align: center;
+              font-size: 0.8rem;
+              border-radius: 3px;
+            }
+
+            &:hover {
+              background-color: darken($background-color, 10%);
+              span {
+                background-color: darken($span-color, 5%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

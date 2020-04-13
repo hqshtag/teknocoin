@@ -1,0 +1,43 @@
+$background: $scary-black;
+$counter: #fff;
+$labels: #eee;
+
+$borderC: none;
+
+.timer {
+  order: 5;
+
+  display: flex;
+  justify-content: center;
+  background-color: $background;
+  font-family: "Digital-7 mono";
+  width: 100%;
+  border: $borderC;
+  .counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 19px;
+    span {
+      color: $counter;
+      font-size: 5em;
+    }
+
+    label {
+      color: $labels;
+      font-family: "Muli";
+      text-transform: uppercase;
+      position: relative;
+      font-size: 0.6em;
+      letter-spacing: 3px;
+      //background-color: black;
+    }
+    &.days {
+      label {
+        position: relative;
+        left: 13px;
+      }
+    }
+  }
+}

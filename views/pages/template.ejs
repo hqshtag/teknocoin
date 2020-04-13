@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/header.ejs %>
+  </head>
+
+  <body>
+    <% include ../partials/cooldownTimer.ejs %>
+  </body>
+  <script>
+    window.addEventListener("load", () => {
+      let script = document.createElement("script");
+      //let clr = document.createElement("script");
+      script.src = "/assets/js/timer.js";
+      //clr.src = "./colorScript.js";
+      document.body.appendChild(script);
+      //document.body.appendChild(clr);
+    });
+  </script>
+</html>

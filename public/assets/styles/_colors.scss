@@ -52,3 +52,31 @@ $bluish_white: #beefff;
 .light_bg {
   background-color: $whitish_white;
 }
+
+.color-picker-container {
+  position: relative;
+  bottom: 0;
+  order: 6;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  background-color: $black-not-black;
+  .color-box {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    border: 5px solid $whitish_white;
+    border-radius: 50%;
+    &:hover {
+      border-color: #bdb8b8;
+      cursor: url("../cursors/material-design-best-edition-by-/pen.cur"),
+        pointer;
+    }
+    &:active {
+      border-color: #829ed1;
+    }
+  }
+}

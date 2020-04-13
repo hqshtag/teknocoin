@@ -9,6 +9,7 @@ app
   .set("view engine", "ejs");
 //routes
 app.use("/", require("./routes/index"));
+app.use("/template", (req, res) => res.render("pages/template"));
 //app.use("/test", (req, res) => res.send({ test: "data" }));
 
 // Error handler

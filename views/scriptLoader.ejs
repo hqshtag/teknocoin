@@ -1,0 +1,13 @@
+<script>
+  const SOURCES = [
+    "/assets/js/timer.js",
+    "/assets/js/backgroundColorPicker.js",
+  ];
+  window.addEventListener("load", () => {
+    SOURCES.forEach((source) => {
+      let script = document.createElement("script");
+      script.src = source;
+      document.body.appendChild(script);
+    });
+  });
+</script>
