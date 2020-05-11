@@ -1,4 +1,4 @@
-const END = new Date("28-Apr-2020 14:00");
+const END = new Date("08-Jul-2020 00:00");
 
 let timer = {
   days: 0,
