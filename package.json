@@ -1,7 +1,7 @@
 {
-  "name": "tiknoke",
+  "name": "tiknocoin",
   "version": "1.0.0",
-  "description": "A tiknoke countdown",
+  "description": "A currency, a crypto currency",
   "engines": {
     "node": "12.x"
   },
@@ -23,15 +23,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hqshtag/tiknuke"
+    "url": "https://github.com/hqshtag/tiknocoin"
   },
   "keywords": [
-    "meteor",
-    "strike",
-    "doomsday",
-    "doom",
-    "doomsday clock",
-    "countdown",
+    "crypto",
+    "currency",
+    "blockchain",
+    "mining",
+    "cryptography",
+    "digital currency",
     "node",
     "heroku",
     "express"

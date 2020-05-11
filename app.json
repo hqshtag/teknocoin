@@ -1,18 +1,18 @@
 {
-  "name": "TikNuke",
-  "description": "A countdown app to the apocalypse",
+  "name": "tiknocoin",
+  "description": "the currency of the apocalypse",
   "repository": "https://github.com/heroku/node-js-getting-started",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
   "keywords": [
-    "meteor",
-    "strike",
-    "doomsday",
-    "doom",
-    "doomsday clock",
-    "countdown",
+    "crypto",
+    "currency",
+    "blockchain",
+    "mining",
+    "cryptography",
+    "digital currency",
     "node",
-    "express",
-    "heroku"
+    "heroku",
+    "express"
   ],
   "image": "heroku/nodejs"
 }
