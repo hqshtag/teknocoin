@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "teknocoin",
+=======
+  "name": "tiknocoin",
+>>>>>>> 0aa1929e0834ac5e92095caa51c2fef0d5125b54
   "version": "1.0.0",
   "description": "A currency, a crypto currency",
   "engines": {
@@ -25,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hqshtag/tiknocoin"
+    "url": "https://github.com/hqshtag/teknocoin"
   },
   "keywords": [
     "crypto",
